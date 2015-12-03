@@ -1,0 +1,13 @@
+web:
+  build: ./nginx
+  links:
+    - app001
+    - app002
+  ports:
+    - 80:80
+
+app001:
+  build: ./app
+
+app002:
+  build: ./app
